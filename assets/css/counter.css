@@ -14,7 +14,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
 }
 
 .counter-elements {
@@ -23,45 +22,48 @@
     display: flex;
     justify-content: center;
     align-items: center;    
-    border: 1px solid blue;
+}
+
+.counter-elements {
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 0.5rem;
 }
 
 .counter-button{
-    width: 3rem;
-    height: 3rem;
+    content: '';
+    padding-bottom: 0.3rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
-    text-align: center;
-    font-weight: bold;
-    font-size: 2rem;
+    text-align: center;   
     background-color: darkcyan;
     color: aliceblue;
     border: none;
     margin: 1rem;
-    transform: scale(1);
-    animation: buttonClickAnimation 0.5s ease-in-out;
+    font-family: sans-serif;
+    font-size: 2rem;
+    cursor: pointer;   
+    
 }
+.counter-button:hover{
+    background-color:cadetblue;
+}  
+  .counter-button:active {
+    transform: translateY(-2px);
+    border: 0.1rem solid grey;
+    border-radius: 50%;
+  }
+  
 
-.number{
+#number{
+    font-family: sans-serif;
+    /* padding-top:0.5rem; */
     width: 3rem;
     height: 3rem;
     text-align: center;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
-@keyframes buttonClickAnimation {
-    0% {
-        transform: scale(1.1);
-    }
-
-    50% {
-        transform: scale(1.2);
-        background-color: indigo;
-    }
-
-    100% {
-        transform: scale(1);
-        background-color: darkcyan;
-    }
-}
 
