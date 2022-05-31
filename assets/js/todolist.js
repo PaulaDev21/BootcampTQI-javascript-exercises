@@ -5,6 +5,11 @@ function createTaskListHtml(){
     let task, txtWrapper, ckBox, lbl;
     output = '';
     taskListElem = document.getElementById('task-list');
+    let child = taskListElem.lastElementChild;
+    while (child){
+        taskListElem.removeChild(child);
+        child = taskListElem.lastElementChild;
+    }
 
     for (let i=0; i<taskList.length;i++){
         task = 'task_' + (i+1);
@@ -29,4 +34,20 @@ function createTaskListHtml(){
 
         taskListElem.appendChild(txtWrapper);
     }
+}
+
+function addTask(){
+    newTask = document.getElementsByClassName('new-task')[0];
+    if (newTask.value.trim() === ''){
+        alert('You need to describe your task before adding it!');
+        return;
+    }
+    taskList.push([newTask.value, UNCHECKED]);
+    createTaskListHtml();
+    newTask.value = '';
+}
+
+function clickButton(event){
+    if (event.keyCode === 13)
+        document.getElementById('new-task-button').click();
 }

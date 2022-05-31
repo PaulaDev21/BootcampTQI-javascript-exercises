@@ -80,6 +80,7 @@ body{
 
 .checkbox-label{
     font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-left: 0.5em;
 }
 
 .task-checkbox:checked + .checkbox-label{

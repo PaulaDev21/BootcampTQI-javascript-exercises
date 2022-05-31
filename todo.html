@@ -19,8 +19,8 @@
         <label class="new-task-label" for="new-task">
             <h2>Insert a new task:</h2>
         </label>
-        <input type="text" class="new-task">
-        <button class="new-task-button button">Add To List</button>
+        <input type="text" class="new-task" autofocus onkeydown="clickButton(window.event)">
+        <button id="new-task-button" class="button" onclick="addTask()">Add To List</button>
     </div>
 
     <main id="task-list">
