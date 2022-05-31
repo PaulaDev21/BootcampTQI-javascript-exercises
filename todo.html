@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/todo.css">
+    <script src="./assets/js/todolist.js"></script>
+    <title>JavaScript Todo List</title>
+</head>
+
+<body>
+    <header class="todo-header">
+        <h1> Your tasks </h1>
+    </header>
+
+    <div class="new-tasks-wrapper">
+        <label class="new-task-label" for="new-task">
+            <h2>Insert a new task:</h2>
+        </label>
+        <input type="text" class="new-task">
+        <button class="new-task-button button">Add To List</button>
+    </div>
+
+    <main id="task-list">
+        <script>
+            createTaskListHtml();
+        </script>
+    </main>
+
+    <div class="clean-tasks-wrapper">
+        <button class="clean-done-button button">Clean Done</button>
+        <button class="clean-but-all-button button">Clean All</button>
+    </div>
+</body>
+
+</html>

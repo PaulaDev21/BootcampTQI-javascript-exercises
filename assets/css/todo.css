@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courgette', cursive, serif;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-header {
+    width: 100%;
+    margin: 1rem 0 0.5rem 0;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.new-tasks-wrapper{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.new-task-label{
+    width: 90%;
+    height: auto;
+    font-family: inherit;
+    margin: 0.5rem;
+    text-align: justify;
+}
+
+.new-task{
+    font-family: inherit;
+    width: 90%;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    /* border: 2px solid maroon; */
+}
+
+.new-task:focus{
+    background-color: rgb(196, 253, 235);
+}
+
+.button {
+    margin: 0.5rem;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: chocolate;
+    color: antiquewhite;
+    font-size: 1rem;
+}
+
+.button:hover{
+    background-color:coral;
+    box-shadow: 0.1rem 0.1rem;
+}
+
+.button:active{
+    transform: translate(1px,-1px);
+
+}
+
+#task-list{
+    width: 80%;
+    height: auto;
+    background-color: rgb(196, 253, 235);
+    padding: 1rem;
+}
+
+
+.checkbox-label{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.task-checkbox:checked + .checkbox-label{
+    text-decoration: line-through;
+}
+
+.clean-tasks-wrapper{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
