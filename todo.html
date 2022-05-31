@@ -20,8 +20,11 @@
             <h2>Insert a new task:</h2>
         </label>
         <input type="text" class="new-task" autofocus onkeydown="clickButton(window.event)">
+        <div class="warning" id="empty-new-task-warning"></div>
         <button id="new-task-button" class="button" onclick="addTask()">Add To List</button>
+
     </div>
+
 
     <main id="task-list">
         <script>
@@ -30,8 +33,8 @@
     </main>
 
     <div class="clean-tasks-wrapper">
-        <button class="clean-done-button button">Clean Done</button>
-        <button class="clean-but-all-button button">Clean All</button>
+        <button class="clean-done-button button" onclick="cleanDone()">Clean Done</button>
+        <button class="clean-but-all-button button" onclick="cleanAll()">Clean All</button>
     </div>
 </body>
 
