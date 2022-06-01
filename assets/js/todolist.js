@@ -42,9 +42,12 @@ function createTaskListHtml(){
 function addTask(){
     newTask = document.getElementsByClassName('new-task')[0];
     if (newTask.value.trim() === ''){
-        warningElement = document.getElementById('empty-new-task-warning');
-        warningElement.setAttribute('visibility', 'visible')
-        warningElement.innerHTML = "You need to describe the task to add it to the list!"
+        warningElement = document.createElement('div');
+        warningElement.setAttribute('id', 'empty-new-task-warning');
+        warningElement.setAttribute('class', 'warning')
+        warningElement.innerHTML = "You need to describe the task before adding it to the list!"
+        elemBefore = document.getElementsByClassName('new-task')[0];
+        elemBefore.after(warningElement)
         return;
     }
     taskList.push([newTask.value, UNCHECKED]);
@@ -98,9 +101,8 @@ function cleanAll(){
 
 function cleanWarnings(){
     warnings = document.getElementsByClassName('warning');
-    for (let i=0; i< warnings.length; i++){
-        warnings[i].innerHTML = '';
-        warnings[i].setAttribute('visibility', 'hidden');
+    while (warnings.length > 0){
+        warnings[0].remove();
     }
 
 }

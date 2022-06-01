@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(217, 230, 235);
+}
+
+.menu-header{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-header a{
+    /* border: 1px solid red; */
+    text-decoration: none;
+    text-align: center;
+    min-width: 20rem;
+    padding: 0 0.5rem;
+    font-family:'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: inherit;
+    color: inherit;
+    text-transform: uppercase;
+}
+
+.menu-header a:hover{
+    color:burlywood;
+    background-color: maroon;
+}
+
+.main-wrapper{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.exercises-wrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+.exercise{
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding: 0.5rem;
+    
+}
+#counter-wrapper{
+    width: 95%;
+    text-align: center;
+    border: 1px solid lightgray;
+    border-radius: 1rem;
+    padding: 1rem; 
+    background-color: white;  
+    box-shadow: 0 0.5rem 0.5rem 0 grey;  
+
+}
+
+#todo-wrapper{
+    width: 95%;
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid lightgray;
+    border-radius: 1rem;
+    padding: 1rem; 
+    box-shadow: 0 0.5rem 0.5rem 0 grey;
+    background-color: white;    
+
+
+}
+
+
+
+

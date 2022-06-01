@@ -98,7 +98,6 @@ body{
     width: inherit;
     height: auto;
     background-color: rgb(248, 248, 136);
-    padding: .5rem;
+    padding: .5rem 1rem;
     margin: 0.3rem 0rem;
-    visibility: hidden;
 }
