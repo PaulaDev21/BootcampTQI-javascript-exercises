@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+ 
+}
+
+main{
+    background-color: darkblue;
+    color: lightblue;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.change-mode-button{
+    padding: 1rem;
+    margin: 1rem;
+    background-color: lightblue;
+    color: darkblue;
+    border:none;
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.2rem dimgrey;
+    font-weight: bold;
+}
+
+.change-mode-button:hover{
+    color: blue;
+}
+
+.change-mode-button:active{
+    transform: translate(1px, -1px);
+}
+
