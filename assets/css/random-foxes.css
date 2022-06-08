@@ -12,7 +12,7 @@ body {
     padding: 2rem;
 }
 
-.cats-wrapper {
+.foxes-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,14 +20,14 @@ body {
     background-color:rgb(247, 217, 207);
 }
 
-#cat-img{
-    min-width: 300px;
-    min-height: 300px;
-    border: 3px solid maroon;
+#fox-img{
+    width: 20rem;
+    height: auto;
+    border-radius: 1rem;
     margin: 1rem;
 }
 
-#change-cat-button {
+#change-fox-button {
     background-color: dodgerblue;
     color: aliceblue;
     min-width: 6rem;
@@ -38,11 +38,11 @@ body {
     border-radius: 0.5rem;
 }
 
-#change-cat-button:hover{
+#change-fox-button:hover{
     background-color: darkblue;
 }
 
-#change-cat-button:active{
+#change-fox-button:active{
     transform: translate(1px, -1px);
 }
 
